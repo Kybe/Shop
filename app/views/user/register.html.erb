@@ -1,0 +1,24 @@
+<h1>Register</h1>
+<%= error_messages_for :user %>
+<% form_for :user do |f| %>
+<%= render 'shared/error_messages' %>
+  <p>
+    <%= f.label :screen_name %>:
+    <%= f.text_field :screen_name %>
+  </p>
+  <p>
+    <%= f.label :e_mail, "E-Mail" %>:
+    <%= f.text_field :e_mail %>
+  </p>
+  <p>
+    <%= f.label :password %>:
+    <%= f.password_field :password  %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %>:
+    <%= f.password_field :password_confirmation  %>
+  </p>
+  <p>
+    <%= f.submit "Register" %>
+  </p>
+<% end %>

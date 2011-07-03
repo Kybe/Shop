@@ -1,0 +1,227 @@
+body { 
+  background-color: #fffdda;  
+  margin: 0;
+  padding: 0;
+
+   
+}
+
+body, p, ol, ul, td {
+  font: normal small Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+a { color: maroon; text-decoration: none; }
+a:hover { text-decoration:underline; }
+
+h1
+{
+	font-size: 20pt;
+	margin-top: 0;
+
+}
+
+#page
+{
+	font-style:italic;
+	text-align: left;
+	border: solid maroon 5px;
+}
+#header 
+{
+	background-image: url(../images/surf.jpg);
+	height: 200px;
+	
+	color: black;
+	font-size: 64pt;
+	font-weight: 900;
+	padding: 16px 16px 16px 120px;
+}
+#content 
+{
+	background: white;
+	
+	padding: 1em;
+	
+	
+}
+#nav
+{
+
+	border-bottom: solid maroon 1px;
+	padding: 0.5em;
+	font-weight: bold;
+}
+#nav a
+{
+	color: Maroon;
+	text-decoration:none;
+}
+
+/* Catalog */
+table.catalog
+{
+	border-collapse:collapse;
+}
+.catalog td
+{
+	padding: 8px 8px 8px 8px;
+	vertical-align:top;
+	margin-bottom: 32px;
+	border-bottom: 1px maroon solid;
+}
+.catalog img
+{
+	border: 0;
+	width:120px;
+}
+.title
+{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+.description
+{
+	vertical-align: middle;
+	margin-bottom: 8px;
+}
+.links
+{
+	float: left; 
+	text-align: left;
+}
+.price
+{
+	color: maroon;
+	font-weight: 800;
+	font-size: 14pt;
+	text-align:right;
+}
+
+/* Cart */
+table.cart
+{
+	border-collapse:collapse;
+}
+.cart td
+{
+	padding: 8px 8px 8px 8px;
+	vertical-align:top;
+	border: 1px maroon solid;
+}
+.cart img
+{
+	border: 0;
+	width:60px;
+}
+.cart .legend
+{
+	font-weight: bold;
+}
+.cart .title
+{
+	font-size: 16px;
+	font-weight:normal;
+}
+.cart .price
+{
+	color: black;
+	font-size: 16px;
+	font-weight:normal;
+}
+.cart .quantity
+{
+	color: black;
+	font-size: 16px;
+	text-align: center;
+}
+.cart .quantity form, .cart .quantity form div
+{
+	display: inline;
+} 
+.cart .total
+{
+	font-weight: bolder;
+	text-transform:uppercase;
+	text-align: right;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+label
+{
+	width: 150px;
+	text-align: right;
+	float: left;
+	margin-top: 4px;
+}
+
+
+.fieldWithErrors
+{
+	display: inline;
+	border: solid 2px maroon;
+	background-color: red;
+}
+

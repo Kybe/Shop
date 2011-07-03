@@ -1,0 +1,49 @@
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Items: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'default' %>
+</head>
+<body>
+	
+    <div id="page">
+      <div id="header"><font color="yellow">Blow UP</font></div>
+      <div id="nav">
+        <div style="float:left;text-align:left">
+		
+          <%= link_to_unless_current "Home",  :controller => "items", 
+                                                 :action => "index" %> | 
+          <%= link_to_unless_current "About Us",:controller => "site", 
+                                                 :action => "about" %> |
+          <%= link_to_unless_current "Contact Us",:controller => "site", 
+                                                 :action => "contact" %>
+	  <% if signed_in? %>
+<%= link_to "Sign out", signout_path, :method => :delete %>
+<% else %>
+<%= link_to "Sign in", signin_path %>
+	  <%= link_to_unless_current "Login",:controller => "user", 
+                                                 :action => "login" %>
+	   </div>
+	<%end%>
+        <div style="text-align:right">
+        
+		  <%= link_to_unless_current "Einkaufskorb",  :controller => "cart", 
+                                                 :action => "index" %> | 
+          <% unless session[:login] %>
+            <%= link_to_unless_current "Admin", :controller => "user", 
+                                                   :action => "admin_login" %>
+          <% else %>
+            <%= link_to_unless_current "Logout", :controller => "user", 
+                                                    :action => "logout" %>
+          <% end %>
+        </div>
+      </div>
+      <div id='content'>
+        <% if flash[:notice] -%>
+          <div id='notice'><%= flash[:notice] %></div>
+        <% end %>
+        <%= yield %>
+      </div>
+    </div>
+
+</body>
+</html>
